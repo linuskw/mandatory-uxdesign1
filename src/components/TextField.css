@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+content{
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+#form_group_unfocused {
+  background-color: #F5F5F5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+#form_group_focused {
+  background-color: #F5F5F5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-bottom: 2px solid #2196f3;
+}
+
+#form_group_disabled {
+  background-color: #F5F5F5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid #d2d2d2;
+  opacity: 0.5;
+}
+
+.form_field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form_field::placeholder {
+  color: transparent;
+}
+
+.form_field:placeholder-shown ~ .form_label {
+  font-size: 16px;
+  cursor: text;
+  top: 11px;
+  left: 10px;
+}
+
+label,
+.form_field:focus ~ .form_label {
+  position: absolute;
+  padding-top: 3px;
+  top: 0;
+  left: 10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form_field:focus ~ .form_label {
+  color: #2196f3;
+}
