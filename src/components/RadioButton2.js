@@ -9,18 +9,18 @@ class RadioButton2 extends React.Component {
         <div className="container">
           <ul>
             <li>
-              <input type="radio" id="first" name="selector"/>
-              <label htmlFor="f-option">1</label>
+              <input type="radio" id="first" name="selector" />
+              <label htmlFor="first">1</label>
               <div className="check"></div>
             </li>
             <li>
               <input type="radio" id="second" name="selector"/>
-              <label htmlFor="s-option">2</label>
+              <label htmlFor="second">2</label>
               <div className="check"></div>
             </li>
             <li>
               <input type="radio" id="third" name="selector" disabled/>
-              <label htmlFor="t-option">Disabled</label>
+              <label htmlFor="third">Disabled</label>
               <div className="check"></div>
             </li>
           </ul>
